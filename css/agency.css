@@ -114,8 +114,8 @@ body {
 
 header.masthead {
   text-align: center;
-  color: white;
-  background-image: url("../img/header-bg.jpg");
+  color: rgb(255, 255, 255);
+  background-image: url("../img/oppy/oppy_4.jpg");
   background-repeat: no-repeat;
   background-attachment: scroll;
   background-position: center center;
@@ -151,6 +151,99 @@ header.masthead {
       margin-bottom: 25px;
       font-family: 'Droid Serif', 'Helvetica Neue', Helvetica, Arial, sans-serif; }
     header.masthead .intro-text .intro-heading {
+      font-size: 75px;
+      font-weight: 700;
+      line-height: 75px;
+      margin-bottom: 50px;
+      font-family: 'Montserrat', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+      text-transform: uppercase; } }
+
+header.subhead1 {
+  text-align: center;
+  color: rgb(255, 255, 255);
+  background-image: url("../img/oppy/oppy_6.jpg");
+  background-repeat: no-repeat;
+  background-attachment: scroll;
+  background-position: center center;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover; }
+  header.subhead1 .intro-text {
+    padding-top: 150px;
+    padding-bottom: 100px; }
+    header.subhead1 .intro-text .intro-lead-in {
+      font-size: 22px;
+      font-style: italic;
+      line-height: 22px;
+      margin-bottom: 25px;
+      font-family: 'Droid Serif', 'Helvetica Neue', Helvetica, Arial, sans-serif; }
+    header.subhead1 .intro-text .intro-heading {
+      font-size: 50px;
+      font-weight: 700;
+      line-height: 50px;
+      margin-bottom: 25px;
+      font-family: 'Montserrat', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+      text-transform: uppercase; }
+      
+@media (min-width: 768px) {
+  header.subhead1 .intro-text {
+    padding-top: 300px;
+    padding-bottom: 200px; }
+    header.subhead1 .intro-text .intro-lead-in {
+      font-size: 40px;
+      font-style: italic;
+      line-height: 40px;
+      margin-bottom: 25px;
+      font-family: 'Droid Serif', 'Helvetica Neue', Helvetica, Arial, sans-serif; }
+    header.subhead1 .intro-text .intro-heading {
+      font-size: 75px;
+      font-weight: 700;
+      line-height: 75px;
+      margin-bottom: 50px;
+      font-family: 'Montserrat', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+      text-transform: uppercase; } }
+
+/* subhead2 */
+header.subhead2 {
+  text-align: center;
+  color: rgb(255, 255, 255);
+  background-image: url("../img/oppy/oppy_7.jpg");
+  background-repeat: no-repeat;
+  background-attachment: scroll;
+  background-position: center center;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover; }
+  header.subhead2 .intro-text {
+    padding-top: 150px;
+    padding-bottom: 100px; }
+    header.subhead2 .intro-text .intro-lead-in {
+      font-size: 22px;
+      font-style: italic;
+      line-height: 22px;
+      margin-bottom: 25px;
+      font-family: 'Droid Serif', 'Helvetica Neue', Helvetica, Arial, sans-serif; }
+    header.subhead2 .intro-text .intro-heading {
+      font-size: 50px;
+      font-weight: 700;
+      line-height: 50px;
+      margin-bottom: 25px;
+      font-family: 'Montserrat', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+      text-transform: uppercase; }
+      
+@media (min-width: 768px) {
+  header.subhead2 .intro-text {
+    padding-top: 300px;
+    padding-bottom: 200px; }
+    header.subhead2 .intro-text .intro-lead-in {
+      font-size: 40px;
+      font-style: italic;
+      line-height: 40px;
+      margin-bottom: 25px;
+      font-family: 'Droid Serif', 'Helvetica Neue', Helvetica, Arial, sans-serif; }
+    header.subhead2 .intro-text .intro-heading {
       font-size: 75px;
       font-weight: 700;
       line-height: 75px;
@@ -598,3 +691,47 @@ ul.social-buttons {
   .btn-xl .badge {
     color: #000000;
     background-color: white; }
+
+.btn-yl {
+  font-size: 18px;
+  font-weight: 700;
+  padding: 20px 40px;
+  border-radius: 3px;
+  color: rgb(10, 10, 10);
+  border-color: #000000;
+  background-color: rgba(0,0,0,0);
+  font-family: 'Montserrat', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  text-transform: uppercase; }
+  .btn-xl.focus, .btn-xl:focus {
+    color: white;
+    border-color: #b48b01;
+    background-color: #fec503; }
+  .btn-xl:hover {
+    color: white;
+    border-color: #f6bf01;
+    background-color: #fec503; }
+  .btn-xl.active, .btn-xl:active,
+  .open > .btn-xl.dropdown-toggle {
+    color: white;
+    border-color: #f6bf01;
+    background-color: #fec503; }
+    .btn-xl.active.focus, .btn-xl.active:focus, .btn-xl.active:hover, .btn-xl:active.focus, .btn-xl:active:focus, .btn-xl:active:hover,
+    .open > .btn-xl.dropdown-toggle.focus,
+    .open > .btn-xl.dropdown-toggle:focus,
+    .open > .btn-xl.dropdown-toggle:hover {
+      color: white;
+      border-color: #b48b01;
+      background-color: #dcab01; }
+  .btn-xl.active, .btn-xl:active,
+  .open > .btn-xl.dropdown-toggle {
+    background-image: none; }
+  .btn-xl.disabled.focus, .btn-xl.disabled:focus, .btn-xl.disabled:hover, .btn-xl[disabled].focus, .btn-xl[disabled]:focus, .btn-xl[disabled]:hover,
+  fieldset[disabled] .btn-xl.focus,
+  fieldset[disabled] .btn-xl:focus,
+  fieldset[disabled] .btn-xl:hover {
+    border-color: #000000;
+    background-color: #000000; }
+  .btn-xl .badge {
+    color: #000000;
+    background-color: white; }
+
