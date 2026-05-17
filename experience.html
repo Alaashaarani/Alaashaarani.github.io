@@ -5,10 +5,15 @@
 
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <meta name="description" content="">
-    <meta name="author" content="">
+    <meta name="description" content="Experience and projects by Alaaeddine el Chaarani, including AUV docking, underwater robotics, deep reinforcement learning, robotics education, and technical workshops.">
+    <meta name="author" content="Alaaeddine el Chaarani">
+    <meta property="og:title" content="Experience | Alaaeddine el Chaarani">
+    <meta property="og:description" content="AUV docking, underwater robotics, deep reinforcement learning, robotics education, and technical workshops.">
+    <meta property="og:type" content="website">
+    <meta property="og:image" content="img-optimized/portfolio/01-obsea.webp">
+    <meta name="twitter:card" content="summary_large_image">
 
-    <title>Alaaeddine el Masri el Chaarani</title>
+    <title>Experience | Alaaeddine el Chaarani</title>
 
     <!-- Bootstrap core CSS -->
     <link href="vendor/bootstrap/css/bootstrap.css" rel="stylesheet">
@@ -42,10 +47,8 @@
             <li class="nav-item">
               <a class="nav-link js-scroll-trigger" href="index.html">Home</a>
             </li>
-            </li>
             <li class="nav-item">
               <a class="nav-link js-scroll-trigger" href="index.html">skills</a>
-            </li>
             </li>
             <li class="nav-item">
               <a class="nav-link js-scroll-trigger" href="#portfolio">experience</a>
@@ -72,7 +75,7 @@
       <div class="container">
         <div class="intro-text">
           <div class="intro-heading">Experience</div>
-          <div class="intro-lead-in" style="padding-bottom:40px; font-size:30px;">Work Experience, Projects, and workshops</div>
+          <div class="intro-lead-in" style="padding-bottom:40px; font-size:30px;">Work Experience, Projects, and Workshops</div>
           <a class="btn btn-xl js-scroll-trigger" href="#portfolio">View More</a>
         </div>
       </div>
@@ -86,17 +89,41 @@
           <div class="col-lg-12 text-center">
             <h2 class="section-heading">Portfolio</h2>
             <h3 class="section-subheading text-muted">Relevant work showcasing the skills I have developed throughout previous jobs, internships, and workshops.</h3>
+            <div class="experience-filters" aria-label="Experience filters">
+              <button class="active" type="button" data-filter="all">All</button>
+              <button type="button" data-filter="research">Research</button>
+              <button type="button" data-filter="robotics">Robotics</button>
+              <button type="button" data-filter="education">Education</button>
+              <button type="button" data-filter="startup">Startup</button>
+              <button type="button" data-filter="freelance">Freelance</button>
+            </div>
           </div>
         </div>
         <div class="row">
-          <div class="col-md-4 col-sm-6 portfolio-item">
+          
+          <div class="col-md-4 col-sm-6 portfolio-item" data-category="research robotics">
+            <a class="portfolio-link" data-toggle="modal" href="#PM-DeepRL">
+              <div class="portfolio-hover">
+                <div class="portfolio-hover-content">
+                  <i class="fa fa-plus fa-3x"></i>
+                </div>
+              </div>
+              <img loading="lazy" decoding="async" class="img-fluid" src="img-optimized/OBsea/2.webp" alt="Underwater robotics experiment for deep reinforcement learning" style="width:350px;height:250px;">
+            </a>
+            <div class="portfolio-caption">
+              <h4>Deep Reinforcement Learning of Underwater Applications</h4>
+              <p class="text-muted">Underwater Robotics and Autonomous Systems</p>
+            </div>
+          </div>
+
+          <div class="col-md-4 col-sm-6 portfolio-item" data-category="research robotics">
             <a class="portfolio-link" data-toggle="modal" href="#PM-GironaDocking">
               <div class="portfolio-hover">
                 <div class="portfolio-hover-content">
                   <i class="fa fa-plus fa-3x"></i>
                 </div>
               </div>
-              <img class="img-fluid" src="img/portfolio/01-obsea.jpeg" alt="" style="width:350px;height:250px;" >
+              <img loading="lazy" decoding="async" class="img-fluid" src="img-optimized/portfolio/01-obsea.webp" alt="Girona AUV docking experiment at OBSEA" style="width:350px;height:250px;" >
             </a>
             <div class="portfolio-caption">
               <h4>PLOME Project: Girona AUV Docking</h4>
@@ -104,42 +131,43 @@
             </div>
           </div>
           
-          <div class="col-md-4 col-sm-6 portfolio-item">
+          <div class="col-md-4 col-sm-6 portfolio-item" data-category="research robotics">
             <a class="portfolio-link" data-toggle="modal" href="#PM-GironaMini" >
               <div class="portfolio-hover">
                 <div class="portfolio-hover-content">
                   <i class="fa fa-plus fa-3x"></i>
                 </div>
               </div>
-              <img class="img-fluid" src="img/MiniGirona/1.png" alt="" style="width:350px;height:250px;">
+              <img loading="lazy" decoding="async" class="img-fluid" src="img-optimized/MiniGirona/1.webp" alt="Mini Girona AUV prototype" style="width:350px;height:250px;">
             </a>
             <div class="portfolio-caption">
               <h4>Girona Mini AUV Development</h4>
               <p class="text-muted">Vicorob: Computer Vision and Robotics Research Center</p>
             </div>
           </div> 
-          <div class="col-md-4 col-sm-6 portfolio-item">
+          <div class="col-md-4 col-sm-6 portfolio-item" data-category="research robotics">
             <a class="portfolio-link" data-toggle="modal" href="#PM-3DBT">
               <div class="portfolio-hover">
                 <div class="portfolio-hover-content">
                   <i class="fa fa-plus fa-3x"></i>
                 </div>
               </div>
-              <img class="img-fluid" src="img/3D-BT/1.jpg" alt="" style="width:350px;height:250px;">
+              <img loading="lazy" decoding="async" class="img-fluid" src="img-optimized/3D-BT/1.webp" alt="Three dimensional binary tag for underwater localization" style="width:350px;height:250px;">
             </a>
             <div class="portfolio-caption">
               <h4>Three Dimensional Binary Tag</h4>
               <p class="text-muted">Vicorob: Computer Vision and Robotics Research Center</p>
             </div>
           </div>
-          <div class="col-md-4 col-sm-6 portfolio-item">
+          
+          <div class="col-md-4 col-sm-6 portfolio-item" data-category="research robotics">
             <a class="portfolio-link" data-toggle="modal" href="#PM-GDS">
               <div class="portfolio-hover">
                 <div class="portfolio-hover-content">
                   <i class="fa fa-plus fa-3x"></i>
                 </div>
               </div>
-              <img class="img-fluid" src="img/portfolio/ds_team.jpeg" alt="" style="width:350px;height:250px;">
+              <img loading="lazy" decoding="async" class="img-fluid" src="img-optimized/portfolio/ds_team.webp" alt="Docking station development team" style="width:350px;height:250px;">
             </a>
             <div class="portfolio-caption">
               <h4>Internship: Docking Station Development</h4>
@@ -147,14 +175,14 @@
             </div>
           </div>
 
-          <div class="col-md-4 col-sm-6 portfolio-item">
+          <div class="col-md-4 col-sm-6 portfolio-item" data-category="education robotics">
             <a class="portfolio-link" data-toggle="modal" href="#PM-technofusion">
               <div class="portfolio-hover">
                 <div class="portfolio-hover-content">
                   <i class="fa fa-plus fa-3x"></i>
                 </div>
               </div>
-              <img class="img-fluid" src="img/technofusion/1.jpg" alt="" style="width:350px;height:250px;">
+              <img loading="lazy" decoding="async" class="img-fluid" src="img-optimized/technofusion/1.webp" alt="Technofusion educational robotics activity" style="width:350px;height:250px;">
             </a>
             <div class="portfolio-caption">
               <h4>Technofusion: Education Robotics</h4>
@@ -162,29 +190,29 @@
             </div>
           </div>
 
-          <div class="col-md-4 col-sm-6 portfolio-item">
+          <div class="col-md-4 col-sm-6 portfolio-item" data-category="startup education robotics">
             <a class="portfolio-link" data-toggle="modal" href="#PM-NRC">
               <div class="portfolio-hover">
                 <div class="portfolio-hover-content">
                   <i class="fa fa-plus fa-3x"></i>
                 </div>
               </div>
-              <img class="img-fluid" src="img/NRC/5.jpeg" alt="" style="width:350px;height:250px;">
+              <img loading="lazy" decoding="async" class="img-fluid" src="img-optimized/NRC/5.webp" alt="North Robotics Club activity" style="width:350px;height:250px;">
             </a>
             <div class="portfolio-caption">
-              <h4>Startup: Robotics center</h4>
+              <h4>Startup: Robotics Center</h4>
               <p class="text-muted">North Robotics Club</p>
             </div>
           </div>
 
-          <div class="col-md-4 col-sm-6 portfolio-item">
+          <div class="col-md-4 col-sm-6 portfolio-item" data-category="education robotics">
             <a class="portfolio-link" data-toggle="modal" href="#PM-LIUVEX">
               <div class="portfolio-hover">
                 <div class="portfolio-hover-content">
                   <i class="fa fa-plus fa-3x"></i>
                 </div>
               </div>
-              <img class="img-fluid" src="img/VEX/5.jpg" alt="" style="width:350px;height:250px;">
+              <img loading="lazy" decoding="async" class="img-fluid" src="img-optimized/VEX/5.webp" alt="VEX robotics university competition" style="width:350px;height:250px;">
             </a>
             <div class="portfolio-caption">
               <h4>VEX Competition: University Category</h4>
@@ -192,14 +220,14 @@
             </div>
           </div>
 
-            <div class="col-md-4 col-sm-6 portfolio-item">
+            <div class="col-md-4 col-sm-6 portfolio-item" data-category="education robotics">
               <a class="portfolio-link" data-toggle="modal" href="#PM-unity">
                 <div class="portfolio-hover">
                   <div class="portfolio-hover-content">
                     <i class="fa fa-plus fa-3x"></i>
                   </div>
                 </div>
-                <img class="img-fluid" src="img/VEX/2.jpg" alt="" style="width:350px;height:250px;">
+                <img loading="lazy" decoding="async" class="img-fluid" src="img-optimized/VEX/2.webp" alt="Educational robotics workshop at David Karam Educational Center" style="width:350px;height:250px;">
               </a>
               <div class="portfolio-caption">
                 <h4>Unity: Education Robotics</h4>
@@ -207,64 +235,52 @@
               </div>
             </div>
 
-          <div class="col-md-4 col-sm-6 portfolio-item">
+          <div class="col-md-4 col-sm-6 portfolio-item" data-category="education robotics">
             <a class="portfolio-link" data-toggle="modal" href="#PM-ArduinoC">
               <div class="portfolio-hover">
                 <div class="portfolio-hover-content">
                   <i class="fa fa-plus fa-3x"></i>
                 </div>
               </div>
-              <img class="img-fluid" src="img/logos/pedagogy-logo.png" alt="" style="width:350px;height:250px;">
+              <img loading="lazy" decoding="async" class="img-fluid" src="img-optimized/logos/pedagogy-logo.webp" alt="Pedagogy Lebanon logo" style="width:350px;height:250px;">
             </a>
             <div class="portfolio-caption">
               <h4>Arduino Curriculum Development</h4>
               <p class="text-muted">Pedagogy Lebanon</p>
             </div>
-            </div>
-            <!-- <div class="col-md-4 col-sm-6 portfolio-item">
-              <a class="portfolio-link" data-toggle="modal" href="#PM-3">
-                <div class="portfolio-hover">
-                  <div class="portfolio-hover-content">
-                    <i class="fa fa-plus fa-3x"></i>
-                  </div>
-                </div>
-                <img class="img-fluid" src="img/portfolio/clouditlogo.jpg" alt="">
-              </a>
-              <div class="portfolio-caption">
-                <h4>HVAC Internship</h4>
-                <p class="text-muted">Albonian</p>
-              </div>
-            </div> -->
-              <div class="col-md-4 col-sm-6 portfolio-item">
-                <a class="portfolio-link" data-toggle="modal" href="#PM-rabbit">
-                  <div class="portfolio-hover">
-                    <div class="portfolio-hover-content">
-                      <i class="fa fa-plus fa-3x"></i>
-                    </div>
-                  </div>
-                  <img class="img-fluid" src="img/logos/Injaze-logo.png" alt="" style="width:350px;height:250px;">
-                </a>
-                <div class="portfolio-caption">
-                  <h4>Startup: Rabit farm</h4>
-                  <p class="text-muted">Injaze Lebanon</p>
-                </div>
-              </div>
-              <div class="col-md-4 col-sm-6 portfolio-item">
-                <a class="portfolio-link" data-toggle="modal" href="#PM-upwork">
-                  <div class="portfolio-hover">
-                    <div class="portfolio-hover-content">
-                      <i class="fa fa-plus fa-3x"></i>
-                    </div>
-                  </div>
-                  <img class="img-fluid" src="img/logos/upwork-logo.jpg" alt="" style="width:350px;height:250px;">
-                </a>
-                <div class="portfolio-caption">
-                  <h4>Free Lance and Tutoring</h4>
-                  <p class="text-muted">Universities, High Schools, </p>
-                </div>
-                
-        
+          </div>
 
+          <div class="col-md-4 col-sm-6 portfolio-item" data-category="startup">
+            <a class="portfolio-link" data-toggle="modal" href="#PM-rabbit">
+              <div class="portfolio-hover">
+                <div class="portfolio-hover-content">
+                  <i class="fa fa-plus fa-3x"></i>
+                </div>
+              </div>
+              <img loading="lazy" decoding="async" class="img-fluid" src="img-optimized/logos/Injaze-logo.webp" alt="Injaze Lebanon logo" style="width:350px;height:250px;">
+            </a>
+            <div class="portfolio-caption">
+              <h4>Startup: Rabbit Farm</h4>
+              <p class="text-muted">Injaze Lebanon</p>
+            </div>
+          </div>
+
+          <div class="col-md-4 col-sm-6 portfolio-item" data-category="freelance education">
+            <a class="portfolio-link" data-toggle="modal" href="#PM-upwork">
+              <div class="portfolio-hover">
+                <div class="portfolio-hover-content">
+                  <i class="fa fa-plus fa-3x"></i>
+                </div>
+              </div>
+              <img loading="lazy" decoding="async" class="img-fluid" src="img-optimized/logos/upwork-logo.webp" alt="Upwork logo" style="width:350px;height:250px;">
+            </a>
+            <div class="portfolio-caption">
+              <h4>Freelance and Tutoring</h4>
+              <p class="text-muted">Universities and High Schools</p>
+            </div>
+          </div>
+        </div>
+      </div>
 
     </section>
 
@@ -274,7 +290,7 @@
       <div class="container">
         <div class="row">
           <div class="col-md-4">
-            <span class="copyright">Copyright &copy; Alaaeddine 2024</span>
+            <span class="copyright">Copyright &copy; Alaaeddine <span data-current-year>2024</span></span>
           </div>
           <div class="col-md-4">
             <ul class="list-inline social-buttons">
@@ -326,16 +342,16 @@
                 <div class="modal-body"> 
                   <!-- Project Details Go Here -->
                   <h2>Vilanova OBsea and Sant Feliu del Guixols</h2>
-                  <p class="item-intro text-muted"> The experiement goal is to perform an autonomous docking cycle at <a href="www.obsea.es">OBSEA</a>.
+                  <p class="item-intro text-muted"> The experiment goal is to perform an autonomous docking cycle at <a href="www.obsea.es">OBSEA</a>.
                     The <a href="www.obsea.es">OBSEA</a> underwater observatory is connected with 4 km of cable to the coast of Vilanova i la Geltrú (Barcelona, Spain) and placed at a depth of 20 meters in a fishing protected area.</p>
                   <div class="row">
                     <div class="col-lg-6">
-                      <img class="img-fluid" src="img/santFeliu/1.jpeg" alt="Attaching 3D-BT" style="width:400px;height:200px;">
-                      <img class="img-fluid" src="img/santFeliu/3.jpeg" alt="Transporting the DS" style="width:400px;height:200px;">
+                      <img loading="lazy" decoding="async" class="img-fluid" src="img-optimized/santFeliu/1.webp" alt="Attaching 3D-BT" style="width:400px;height:200px;">
+                      <img loading="lazy" decoding="async" class="img-fluid" src="img-optimized/santFeliu/3.webp" alt="Transporting the DS" style="width:400px;height:200px;">
                     </div>
                     <div class="col-lg-6">
-                      <img class="img-fluid" src="img/santFeliu/2.jpeg" alt="Deployment of the DS" style="width:400px;height:200px;">
-                      <img class="img-fluid" src="img/santFeliu/4.jpeg" alt="Working Area" style="width:400px;height:200px;">
+                      <img loading="lazy" decoding="async" class="img-fluid" src="img-optimized/santFeliu/2.webp" alt="Deployment of the DS" style="width:400px;height:200px;">
+                      <img loading="lazy" decoding="async" class="img-fluid" src="img-optimized/santFeliu/4.webp" alt="Working Area" style="width:400px;height:200px;">
                     </div>
                 </div>
                   <p>Our project began with the development of the Docking Station. 
@@ -348,12 +364,12 @@
 
                   <div class="row">
                     <div class="col-lg-6">
-                      <img class="img-fluid" src="img/OBsea/6.jpeg" alt="" style="width:400px;height:200px;">
-                      <img class="img-fluid" src="img/OBsea/3.jpeg" alt="" style="width:400px;height:200px;">
+                      <img loading="lazy" decoding="async" class="img-fluid" src="img-optimized/OBsea/6.webp" alt="" style="width:400px;height:200px;">
+                      <img loading="lazy" decoding="async" class="img-fluid" src="img-optimized/OBsea/3.webp" alt="" style="width:400px;height:200px;">
                     </div>
                     <div class="col-lg-6">
-                      <img class="img-fluid" src="img/OBsea/4.jpeg" alt="" style="width:400px;height:200px;">
-                      <img class="img-fluid" src="img/OBsea/5.jpeg" alt="" style="width:400px;height:200px;">
+                      <img loading="lazy" decoding="async" class="img-fluid" src="img-optimized/OBsea/4.webp" alt="" style="width:400px;height:200px;">
+                      <img loading="lazy" decoding="async" class="img-fluid" src="img-optimized/OBsea/5.webp" alt="" style="width:400px;height:200px;">
                     </div>
                   </div>
                   
@@ -366,20 +382,24 @@
 
                     <div class="row">
                       <div class="col-lg-6">
-                        <img class="img-fluid" src="img/OBsea/02-pool.jpeg" alt="" style="width:400px;height:200px;">
+                        <img loading="lazy" decoding="async" class="img-fluid" src="img-optimized/OBsea/2.webp" alt="" style="width:400px;height:200px;">
                       </div>
                       <div class="col-lg-6">
-                        <img class="img-fluid" src="img/OBsea/1.jpeg" alt="" style="width:400px;height:200px;">
+                        <img loading="lazy" decoding="async" class="img-fluid" src="img-optimized/OBsea/1.webp" alt="" style="width:400px;height:200px;">
                       </div>
                     </div>
 
                   <ul class="list-inline">
                     <li><b>Date:</b> June, July 2024</li>
-                    <li><b>My Tasks:</b> DS Mechanical Preperation, Docking menouver, Docking logistics</li>
+                    <li><b>My Tasks:</b> DS Mechanical Preparation, Docking maneuver, Docking logistics</li>
                     <li><b><a href="https://vicorob.udg.edu/about-vicorob/"> Team:</a></b> Alaaeddine Chaarani, Patryk Cieslak, Roger Pi, Ricard Segura, Joan Esteba, LLuis Mage, Dr. Narcís Palomeras, Dr. Marc Carreras, Dr. Pere Ridao </li>
                     <li><b>Project:</b> <a href="https://plomeproject.es/">Plome,</a> Platform for Long-lasting Observation of Marine Ecosystems</li>
                     <li><b>Category:</b> Underwater Autonomous mission and long-deployment</li>
                   </ul>
+                  <div class="publication-actions">
+                    <a class="btn btn-yl" href="https://plomeproject.es/">Project Page</a>
+                    <a class="btn btn-yl" href="https://vicorob.udg.edu/about-vicorob/">Research Center</a>
+                  </div>
                   <button class="btn btn-primary" data-dismiss="modal" type="button">
                     <i class="fa fa-times"></i>
                     Close Project</button>
@@ -406,8 +426,8 @@
                 <div class="modal-body">
                   <!-- Project Details Go Here -->
                   <h2>Mini Girona AUV Team Leader</h2>
-                  <p class="item-intro text-muted">Mini Girona AUV is a simplified version of the Girona AUV. The mini Girona is equipped with the necessary tools to perform Autonomous missions including inspection, deep Learning and Manipluation. </p>
-                  <img class="img-fluid d-block mx-auto" src="img/MiniGirona/2.png" alt="">
+                  <p class="item-intro text-muted">Mini Girona AUV is a simplified version of the Girona AUV. The mini Girona is equipped with the necessary tools to perform Autonomous missions including inspection, deep Learning and Manipulation. </p>
+                  <img loading="lazy" decoding="async" class="img-fluid d-block mx-auto" src="img-optimized/MiniGirona/2.webp" alt="">
                   <p>As the team leader of the Mini Girona project, we aim to deliver a prototype AUV capable of performing manipulation and inspection missions 
                     autonomously. To build the Mini Girona, I proposed three versions: one using Delrin, one with welded aluminum, and one with a Bosch frame. 
                     We decided to use the Bosch frame. The manufacturing process required CNC machining and hard anodization. I completed the CNC work on the U-frame 
@@ -417,7 +437,7 @@
                   <ul class="list-inline">
                     <li><b>Date:</b> July 2023 - Ongoing</li>
                     <li><b><a href="https://vicorob.udg.edu/about-vicorob/"> Team:</a></b> Alaaeddine Chaarani, Sebastian Realpe, Patryk Cieslak, Dr. Narcís Palomeras, Dr. Nuno Gracias, Dr. Pere Ridao </li>
-                    <li><b>Rami Competitin Members:</b> Bilal Ahmad, Taqi Hamoda, Deborah Danjuma, Mazen Elgabalawy, Adel Saidani, Thi Tran Ha Bao</li>
+                    <li><b>Rami Competition Members:</b> Bilal Ahmad, Taqi Hamoda, Deborah Danjuma, Mazen Elgabalawy, Adel Saidani, Thi Tran Ha Bao</li>
                     <li><b>Support Members:</b> LLuis Mage, Ricard Segura, Joan Esteba, Ahmad el Ghofli, Albert Carrasco</li>
                     <li><b>Category:</b> Mechanical, electrical and Software Engineering</li>
                   </ul>
@@ -450,14 +470,14 @@
                   <p class="item-intro text-muted">The Girona AUV is an interventional one. In this internship we propose and studied different designs for the Girona Docking Station</p>
                   <div class="row">
                     <div class="col-lg-6">
-                      <img class="img-fluid" src="img/Girona_DS/7.jpg" alt="" style="width:400px;height:200px;">
-                      <img class="img-fluid" src="img/Girona_DS/2.jpg" alt="" style="width:400px;height:200px;">
-                      <img class="img-fluid" src="img/Girona_DS/3.jpg" alt="" style="width:400px;height:200px;">
+                      <img loading="lazy" decoding="async" class="img-fluid" src="img-optimized/Girona_DS/7.webp" alt="" style="width:400px;height:200px;">
+                      <img loading="lazy" decoding="async" class="img-fluid" src="img-optimized/Girona_DS/2.webp" alt="" style="width:400px;height:200px;">
+                      <img loading="lazy" decoding="async" class="img-fluid" src="img-optimized/Girona_DS/3.webp" alt="" style="width:400px;height:200px;">
                     </div>
                     <div class="col-lg-6">
-                      <img class="img-fluid" src="img/Girona_DS/1.jpg" alt="" style="width:400px;height:200px;">
-                      <img class="img-fluid" src="img/Girona_DS/4.jpg" alt="" style="width:400px;height:200px;">
-                      <img class="img-fluid" src="img/Girona_DS/6.jpg" alt="" style="width:400px;height:200px;">
+                      <img loading="lazy" decoding="async" class="img-fluid" src="img-optimized/Girona_DS/1.webp" alt="" style="width:400px;height:200px;">
+                      <img loading="lazy" decoding="async" class="img-fluid" src="img-optimized/Girona_DS/4.webp" alt="" style="width:400px;height:200px;">
+                      <img loading="lazy" decoding="async" class="img-fluid" src="img-optimized/Girona_DS/6.webp" alt="" style="width:400px;height:200px;">
                     </div>
                   </div>
                   <p>The main objective of this internship is to develop the initial concept for the docking station for the Girona AUV. 
@@ -468,7 +488,7 @@
                   <ul class="list-inline">
                     <li><b>Date:</b> May 2022 - June 2023</li>
                     <li><b><a href="https://vicorob.udg.edu/about-vicorob/"> Team:</a></b> Joan Esteba, Alaaeddine Chaarani, Amina el Marri, Pere Ridao</li>
-                    <li><b>Category:</b> Mechanical Enginnering</li>
+                    <li><b>Category:</b> Mechanical Engineering</li>
                   </ul>
                   <button class="btn btn-primary" data-dismiss="modal" type="button">
                     <i class="fa fa-times"></i>
@@ -495,19 +515,19 @@
               <div class="col-lg-8 mx-auto">
                 <div class="modal-body">
                   <!-- Project Details Go Here -->
-                  <h2>Three Dimensiona Bianry Tag</h2>
+                  <h2>Three Dimensional Binary Tag</h2>
                   <p class="item-intro text-muted">The 3D-BT is an outcome of my master thesis and past of the Ph.D study. It is used in underwater application as a landmark
-                    for localization. The 3D-BT is a 3D-printable design that allows reseach centers to use easily.
+                    for localization. The 3D-BT is a 3D-printable design that allows research centers to use easily.
                   </p>
                   <p> 
                     <div class="row">
                       <div class="col-lg-6">
-                        <img class="img-fluid" src="img/3D-BT/2.jpg" alt="" style="width:400px;height:200px;">
-                        <img class="img-fluid" src="img/3D-BT/3.jpg" alt="" style="width:400px;height:200px;">
+                        <img loading="lazy" decoding="async" class="img-fluid" src="img-optimized/3D-BT/2.webp" alt="" style="width:400px;height:200px;">
+                        <img loading="lazy" decoding="async" class="img-fluid" src="img-optimized/3D-BT/3.webp" alt="" style="width:400px;height:200px;">
                       </div>
                       <div class="col-lg-6">
-                        <img class="img-fluid" src="img/3D-BT/4.jpg" alt="" style="width:400px;height:200px;">
-                        <img class="img-fluid" src="img/3D-BT/5.jpg" alt="" style="width:400px;height:200px;">
+                        <img loading="lazy" decoding="async" class="img-fluid" src="img-optimized/3D-BT/4.webp" alt="" style="width:400px;height:200px;">
+                        <img loading="lazy" decoding="async" class="img-fluid" src="img-optimized/3D-BT/5.webp" alt="" style="width:400px;height:200px;">
                       </div>
                     </div>
                     In this research a passive underwater marker was developed that provides spatial information for AUV's using computer vision methods.
@@ -515,13 +535,61 @@
                       For the development process, a set of different markers were proposed and evaluated through simulation. 
                       The evaluation was done based on criteria proposed by Alaaeddine et. al.
                        Then the best design was checked for detection in the water test tank 
-                      and in the sea. Two sea experiments were conducted, the first was fourty-five days long, and the second was six months.
+                      and in the sea. Two sea experiments were conducted, the first was forty-five days long, and the second was six months.
                        Finally, the marker was used in an autonomous mission as a localization feature both in Sant Feliu del Guixols and Vilanova at OBSea. 
                        As a result of this study, we developed the 3D-bt, which is reliable for a +60-day mission in the sea. </p>
                   <ul class="list-inline">
                     <li>Date: Feb 2023 - June 2024</li>
                     <li><a href="https://vicorob.udg.edu/about-vicorob/"> Team:</a> Alaaeddine Chaarani, Patryk Cieslak, Joan Esteba, Ivan Eichhartd, Pere Ridao</li>
                     <li>Category: Computer Science, Underwater application</li>
+                  </ul>
+                  <div class="publication-actions">
+                    <a class="btn btn-yl" href="https://doi.org/10.3390/jmse13081442">Publication</a>
+                    <a class="btn btn-yl" href="https://vicorob.udg.edu/about-vicorob/">Research Center</a>
+                  </div>
+                  <button class="btn btn-primary" data-dismiss="modal" type="button">
+                    <i class="fa fa-times"></i>
+                    Close Project</button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Deep Reinforcement Learning -->
+    <div class="portfolio-modal modal fade" id="PM-DeepRL" tabindex="-1" role="dialog" aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="close-modal" data-dismiss="modal">
+            <div class="lr">
+              <div class="rl"></div>
+            </div>
+          </div>
+          <div class="container">
+            <div class="row">
+              <div class="col-lg-8 mx-auto">
+                <div class="modal-body">
+                  <!-- Project Details Go Here -->
+                  <h2>Deep Reinforcement Learning of Underwater Applications</h2>
+                  <p class="item-intro text-muted">Deep reinforcement learning methods for decision-making, navigation, and autonomy in underwater robotic systems.</p>
+                  <div class="row">
+                    <div class="col-lg-6">
+                      <img loading="lazy" decoding="async" class="img-fluid" src="img-optimized/OBsea/2.webp" alt="" style="width:400px;height:200px;">
+                    </div>
+                    <div class="col-lg-6">
+                      <img loading="lazy" decoding="async" class="img-fluid" src="img-optimized/MiniGirona/2.webp" alt="" style="width:400px;height:200px;">
+                    </div>
+                  </div>
+                  <p>
+                    This work focuses on applying learning-based control and decision-making methods to underwater robotics problems.
+                    The final details will describe the project objective, simulation or experimental setup, training workflow, and key results.
+                  </p>
+                  <ul class="list-inline">
+                    <li><b>Date:</b> To be added</li>
+                    <li><b>My Tasks:</b> To be added</li>
+                    <li><b>Category:</b> Deep Reinforcement Learning, Underwater Robotics</li>
                   </ul>
                   <button class="btn btn-primary" data-dismiss="modal" type="button">
                     <i class="fa fa-times"></i>
@@ -548,35 +616,35 @@
               <div class="col-lg-8 mx-auto">
                 <div class="modal-body">
                   <!-- Project Details Go Here -->
-                  <h2>Albayan Educationa Robotics Club</h2>
-                  <p class="item-intro text-muted">First League League (FLL) and First Global Challenge (FGC) are international competition for Educational Robotics.
+                  <h2>Albayan Educational Robotics Club</h2>
+                  <p class="item-intro text-muted">FIRST LEGO League (FLL) and FIRST Global Challenge (FGC) are international competitions for educational robotics.
                     The basis of FLL is a robotics tournament in a cheerful atmosphere,
-                     where kids and youngsters need to solve a tricky "mission" with the help of a robot. 
-                     The kids are researching a given topic within a team, they are planning programming and testing an autonomous robot to solve the mission.
+                     where kids and young students solve a tricky "mission" with the help of a robot. 
+                     The students research a given topic within a team while planning, programming, and testing an autonomous robot to solve the mission.
                      </p>
                      <div class="row">
                       <div class="col-lg-6">
-                        <img class="img-fluid" src="img/technofusion/4.jpg" alt="" style="width:400px;height:200px;">
-                        <img class="img-fluid" src="img/technofusion/11.jpg" alt="" style="width:400px;height:200px;">
+                        <img loading="lazy" decoding="async" class="img-fluid" src="img-optimized/technofusion/4.webp" alt="" style="width:400px;height:200px;">
+                        <img loading="lazy" decoding="async" class="img-fluid" src="img-optimized/technofusion/11.webp" alt="" style="width:400px;height:200px;">
                       </div>
                       <div class="col-lg-6">
-                        <img class="img-fluid" src="img/technofusion/6.jpg" alt="" style="width:400px;height:200px;">
-                        <img class="img-fluid" src="img/technofusion/9.jpg" alt="" style="width:400px;height:200px;">
+                        <img loading="lazy" decoding="async" class="img-fluid" src="img-optimized/technofusion/6.webp" alt="" style="width:400px;height:200px;">
+                        <img loading="lazy" decoding="async" class="img-fluid" src="img-optimized/technofusion/9.webp" alt="" style="width:400px;height:200px;">
                       </div>
                     </div>
                   <p> 
-                     Starting from 2013, I mentored and coached robotics teams. In 2015 won our first award and represented Lebanon in Jordan Internationa Open Arab Competition.
-                    In 2016 we were placed second on Lebanon and presented it in Spain, Tenerif at the open International Europen Competition. On 2017, we won the third position in Lebanon and represent it in 
-                  Londan, Bath. In 2018, on the FLL Jounior Category we won the first place and represent Lebanon in USA, at the world competition. Same year 2018, in the FGC, we represented Lebanon
+                     Starting from 2013, I mentored and coached robotics teams. In 2015, we won our first award and represented Lebanon in the Jordan International Open Arab Competition.
+                    In 2016, we placed second in Lebanon and presented the project in Tenerife, Spain, at the Open International European Competition. In 2017, we won third place in Lebanon and represented it in 
+                  London, Bath. In 2018, in the FLL Junior category, we won first place and represented Lebanon in the USA at the world competition. In the same year, we represented Lebanon in the FGC
                 in Mexico City. </p>
                 <div class="row">
                   <div class="col-lg-6">
-                    <img class="img-fluid" src="img/technofusion/7.jpg" alt="" style="width:400px;height:200px;">
-                    <img class="img-fluid" src="img/technofusion/3.jpg" alt="" style="width:400px;height:200px;">
+                    <img loading="lazy" decoding="async" class="img-fluid" src="img-optimized/technofusion/7.webp" alt="" style="width:400px;height:200px;">
+                    <img loading="lazy" decoding="async" class="img-fluid" src="img-optimized/technofusion/3.webp" alt="" style="width:400px;height:200px;">
                   </div>
                   <div class="col-lg-6">
-                    <img class="img-fluid" src="img/technofusion/2.jpg" alt="" style="width:400px;height:200px;">
-                    <img class="img-fluid" src="img/technofusion/13.jpg" alt="" style="width:400px;height:200px;">
+                    <img loading="lazy" decoding="async" class="img-fluid" src="img-optimized/technofusion/2.webp" alt="" style="width:400px;height:200px;">
+                    <img loading="lazy" decoding="async" class="img-fluid" src="img-optimized/technofusion/13.webp" alt="" style="width:400px;height:200px;">
                   </div>
                 </div>
                 <p> In 2017, in Tenerife, Spain, we won the first Research Award in the FLL category with our project RACTS: Recycle and Compression Trash System.
@@ -620,10 +688,10 @@
                   <p class="item-intro text-muted">NRC is a robotics center we established in Zghart on Oct 2018. We teach educational robotics for students ages from 5 to 18.</p>
                   <div class="row">
                     <div class="col-lg-6">
-                      <img class="img-fluid" src="img/NRC/2.jpeg" alt="" style="width:400px;height:200px;">
+                      <img loading="lazy" decoding="async" class="img-fluid" src="img-optimized/NRC/2.webp" alt="" style="width:400px;height:200px;">
                     </div>
                     <div class="col-lg-6">
-                      <img class="img-fluid" src="img/NRC/3.jpeg" alt="" style="width:400px;height:200px;">
+                      <img loading="lazy" decoding="async" class="img-fluid" src="img-optimized/NRC/3.webp" alt="" style="width:400px;height:200px;">
                     </div>
                   </div>
                   <p>At North Robotics Club, we needed to develop a comprehensive curriculum to teach students everything they need to start their journey in engineering and robotics.
@@ -672,10 +740,10 @@
                   <p class="item-intro text-muted">Eagle Team is the LIU team established on 2016 to represent the University in the Lebanese National Competition for robotics VEX</p>
                   <div class="row">
                     <div class="col-lg-6">
-                      <img class="img-fluid" src="img/VEX/3.jpg" alt="" style="width:400px;height:200px;">
+                      <img loading="lazy" decoding="async" class="img-fluid" src="img-optimized/VEX/3.webp" alt="" style="width:400px;height:200px;">
                     </div>
                     <div class="col-lg-6">
-                      <img class="img-fluid" src="img/VEX/4.jpg" alt="" style="width:400px;height:200px;">
+                      <img loading="lazy" decoding="async" class="img-fluid" src="img-optimized/VEX/4.webp" alt="" style="width:400px;height:200px;">
                     </div>
                   </div>
                   <p> As part of the 2016-2017 LIU University robotics team, we developed, designed, assembled, and programmed a VEX robot.
@@ -715,7 +783,7 @@
                   <!-- Project Details Go Here -->
                   <h2>Unity: David Karam</h2>
                   <p class="item-intro text-muted">Unity is <b><a href="https://www.vexrobotics.com/">VEX</a></b> team in David Karam Education Center, Alkora Lebanon. The team competed in two categories, the IQ and EDR. The name of EDR did change and now it is called V5.</p>
-                  <img class="img-fluid d-block mx-auto" src="img/VEX/1.jpg" alt="">
+                  <img loading="lazy" decoding="async" class="img-fluid d-block mx-auto" src="img-optimized/VEX/1.webp" alt="">
                   <p> Beyond the VEX competition requirements for robotics, our team developed innovative solutions. 
                     For two years, we tested and built various systems, incorporating complex mechanics such as four-bar and six-bar linkages, linear extension mechanisms,
                      gear transmission, and control systems. VEX Robotics also teaches essential electronics skills, including connections, communication protocols, drivers, 
@@ -757,10 +825,10 @@
                      marketing and financial processes. </p>
                     <div class="row">
                       <div class="col-lg-6">
-                        <img class="img-fluid" src="img/pedagogy/1.jpg" alt="" style="width:400px;height:200px;">
+                        <img loading="lazy" decoding="async" class="img-fluid" src="img-optimized/pedagogy/1.webp" alt="" style="width:400px;height:200px;">
                       </div>
                       <div class="col-lg-6">
-                        <img class="img-fluid" src="img/pedagogy/2.jpg" alt="" style="width:400px;height:200px;">
+                        <img loading="lazy" decoding="async" class="img-fluid" src="img-optimized/pedagogy/2.webp" alt="" style="width:400px;height:200px;">
                       </div>
                     </div>
                   <p> In three months, we were tasked with delivering a 20-lesson curriculum for Arduino, complete with a teacher guide, student guide, programming solutions, 
@@ -802,12 +870,12 @@
                     youth to become qualified and successful employees and entrepreneurs in a growing regional and global economy. </p>
                     <div class="row">
                       <div class="col-lg-6">
-                        <img class="img-fluid" src="img/rabbitFarm/1.jpg" alt="" style="width:400px;height:200px;">
-                        <img class="img-fluid" src="img/rabbitFarm/3.jpg" alt="" style="width:400px;height:200px;">
+                        <img loading="lazy" decoding="async" class="img-fluid" src="img-optimized/rabbitFarm/1.webp" alt="" style="width:400px;height:200px;">
+                        <img loading="lazy" decoding="async" class="img-fluid" src="img-optimized/rabbitFarm/3.webp" alt="" style="width:400px;height:200px;">
                       </div>
                       <div class="col-lg-6">
-                        <img class="img-fluid" src="img/rabbitFarm/2.jpg" alt="" style="width:400px;height:200px;">
-                        <img class="img-fluid" src="img/rabbitFarm/4.jpg" alt="" style="width:400px;height:200px;">
+                        <img loading="lazy" decoding="async" class="img-fluid" src="img-optimized/rabbitFarm/2.webp" alt="" style="width:400px;height:200px;">
+                        <img loading="lazy" decoding="async" class="img-fluid" src="img-optimized/rabbitFarm/4.webp" alt="" style="width:400px;height:200px;">
                       </div>
                     </div>
                   <p> In this project, we learned how to apply the Business Model Canvas using various tools. 
@@ -817,7 +885,7 @@
                   </p>
                   <ul class="list-inline">
                     <li>Date: 2018 - 2019</li>
-                    <li>Category: entrepreneure</li>
+                    <li>Category: Entrepreneurship</li>
                   </ul>
                   <button class="btn btn-primary" data-dismiss="modal" type="button">
                     <i class="fa fa-times"></i>
@@ -845,22 +913,22 @@
                 <div class="modal-body">
                   <!-- Project Details Go Here -->
                   <h2>Upwork Freelancing</h2>
-                  <p class="item-intro text-muted">Starting in Lebanon, I did deliver multiple project and tought students. Now I use upwork to deliver project, to check my profile more</p>
+                  <p class="item-intro text-muted">Starting in Lebanon, I delivered multiple projects and taught students. Now I use Upwork to deliver projects and connect with clients.</p>
                   <div class="row">
                     <div class="col-lg-6">
-                      <img class="img-fluid" src="img/freeLance/1.png" alt="" style="width:400px;height:200px;">
-                      <img class="img-fluid" src="img/freeLance/3.png" alt="" style="width:400px;height:200px;">
+                      <img loading="lazy" decoding="async" class="img-fluid" src="img-optimized/freeLance/1.webp" alt="" style="width:400px;height:200px;">
+                      <img loading="lazy" decoding="async" class="img-fluid" src="img-optimized/freeLance/3.webp" alt="" style="width:400px;height:200px;">
                     </div>
                     <div class="col-lg-6">
-                      <img class="img-fluid" src="img/freeLance/2.jpg" alt="" style="width:400px;height:200px;">
-                      <img class="img-fluid" src="img/freeLance/4.jpeg" alt="" style="width:400px;height:200px;">
+                      <img loading="lazy" decoding="async" class="img-fluid" src="img-optimized/freeLance/2.webp" alt="" style="width:400px;height:200px;">
+                      <img loading="lazy" decoding="async" class="img-fluid" src="img-optimized/freeLance/4.webp" alt="" style="width:400px;height:200px;">
                     </div>
                   </div>                  
-                  <p>In these project I provided consultancy and guidness for the Bacherlors and Master's students.  </p>
+                  <p>In these projects, I provided consultancy and guidance for bachelor's and master's students.  </p>
                   <ul class="list-inline">
                     <li>Date: 2021 - Ongoing</li>
         
-                    <li>Category: Mechnaical and electrical</li>
+                    <li>Category: Mechanical and electrical</li>
                   </ul>
                   <button class="btn btn-primary" data-dismiss="modal" type="button">
                     <i class="fa fa-times"></i>
@@ -880,13 +948,9 @@
 
     <!-- Plugin JavaScript -->
     <script src="vendor/jquery-easing/jquery.easing.min.js"></script>
-
-    <!-- Contact form JavaScript -->
-    <script src="js/jqBootstrapValidation.js"></script>
-    <script src="js/contact_me.js"></script>
-
     <!-- Custom scripts for this template -->
     <script src="js/agency.min.js"></script>
+    <script src="js/site-layout.js"></script>
 
   </body>
 
