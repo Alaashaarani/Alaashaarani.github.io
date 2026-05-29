@@ -108,7 +108,11 @@
                   <i class="fa fa-plus fa-3x"></i>
                 </div>
               </div>
-              <img loading="lazy" decoding="async" class="img-fluid" src="img-optimized/OBsea/2.webp" alt="Underwater robotics experiment for deep reinforcement learning" style="width:350px;height:250px;">
+              <img loading="lazy" decoding="async" 
+              class="img-fluid" 
+              src="img-optimized/rl_docking/3.webp" 
+              alt="Underwater robotics experiment for deep reinforcement learning" 
+              style="width:350px;height:250px;">
             </a>
             <div class="portfolio-caption">
               <h4>Deep Reinforcement Learning of Underwater Applications</h4>
@@ -434,8 +438,10 @@
                     to fit the required design, while other processes were carried out with the help of external manufacturers. Within the team, there is a group of 
                     students, each responsible for a task related to electronics and software.  This project is ongoing, more about it will be updates soon.
                   </p>
+                   <img loading="lazy" decoding="async" class="img-fluid d-block mx-auto" src="img-optimized/MiniGirona/3.webp" alt="">
+
                   <ul class="list-inline">
-                    <li><b>Date:</b> July 2023 - Ongoing</li>
+                    <li><b>Date:</b> July 2023 - 2025</li>
                     <li><b><a href="https://vicorob.udg.edu/about-vicorob/"> Team:</a></b> Alaaeddine Chaarani, Sebastian Realpe, Patryk Cieslak, Dr. Narcís Palomeras, Dr. Nuno Gracias, Dr. Pere Ridao </li>
                     <li><b>Rami Competition Members:</b> Bilal Ahmad, Taqi Hamoda, Deborah Danjuma, Mazen Elgabalawy, Adel Saidani, Thi Tran Ha Bao</li>
                     <li><b>Support Members:</b> LLuis Mage, Ricard Segura, Joan Esteba, Ahmad el Ghofli, Albert Carrasco</li>
@@ -574,21 +580,30 @@
                   <!-- Project Details Go Here -->
                   <h2>Deep Reinforcement Learning of Underwater Applications</h2>
                   <p class="item-intro text-muted">Deep reinforcement learning methods for decision-making, navigation, and autonomy in underwater robotic systems.</p>
-                  <div class="row">
-                    <div class="col-lg-6">
-                      <img loading="lazy" decoding="async" class="img-fluid" src="img-optimized/OBsea/2.webp" alt="" style="width:400px;height:200px;">
-                    </div>
-                    <div class="col-lg-6">
-                      <img loading="lazy" decoding="async" class="img-fluid" src="img-optimized/MiniGirona/2.webp" alt="" style="width:400px;height:200px;">
-                    </div>
-                  </div>
+                  <img loading="lazy" decoding="async" class="img-fluid d-block mx-auto" src="img-optimized/rl_docking/1.webp" alt="" style="width:100%;height:auto;">
                   <p>
-                    This work focuses on applying learning-based control and decision-making methods to underwater robotics problems.
-                    The final details will describe the project objective, simulation or experimental setup, training workflow, and key results.
+                    In this work, We created a library that utilizes Stonefish simulator to train deep reinforcement learning algorithms for underwater applications.
+                    Stonefish is a high-fidelity underwater simulator that provides realistic physics and environmental conditions for training and testing underwater robotic systems. 
+                    By using Stablebaseline and Gym we create a multithreaded environment for training and testing different DRL algorithms.
+
+                    In this example we are utilizing the Girona AUV docking scenario to train a DRL agent for the docking task. The agent learns to control the AUV's thrusters to perform the docking maneuver successfully. 
+                     The training process involves simulating multiple episodes of the docking task, where the agent receives rewards based on its performance in achieving the docking objective.
+                     The trained model can then be evaluated in the simulator and potentially transferred to real-world underwater robotic systems for further testing and deployment.
                   </p>
+                  <img loading="lazy" decoding="async" class="img-fluid d-block mx-auto" src="img-optimized/rl_docking/2.webp" alt="" style="width:100%;height:auto;">
+                  <p>
+                    Using this library we trained the Girona AUV to perform docking and test in the water tank. The trained model was able to perform the docking maneuver successfully, demonstrating the potential of deep reinforcement learning for underwater robotic applications. 
+                     This work contributes to the advancement of autonomous underwater systems by providing a framework for training and evaluating deep reinforcement learning algorithms in realistic underwater environments.
+                  </p>
+                  <img loading="lazy" decoding="async" class="img-fluid d-block mx-auto" src="img-optimized/rl_docking/4.webp" alt="" style="width:100%;height:auto;">
+                  <p>
+                    In this image we show the test Gui which allow the user to control the RL parameters for easy testing and debugging.
+                     The library is still underdevelopment but can be accessed through this <a href="https://github.com/Alaashaarani/stonefish_rl" target="_blank">GitHub repository</a>.
+                  </p>
+
                   <ul class="list-inline">
-                    <li><b>Date:</b> To be added</li>
-                    <li><b>My Tasks:</b> To be added</li>
+                    <li><b>Date:</b> 2025-Ongoing</li>
+                    <li><b>My Tasks:</b> development of the Library and performance of successful underwater docking using DRL</li>
                     <li><b>Category:</b> Deep Reinforcement Learning, Underwater Robotics</li>
                   </ul>
                   <button class="btn btn-primary" data-dismiss="modal" type="button">
