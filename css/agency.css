@@ -145,18 +145,24 @@ header.masthead {
   header.masthead .intro-text {
     padding-top: 150px;
     padding-bottom: 100px; }
-    header.masthead .intro-text .intro-lead-in {
+  header.subhead1.cv-masthead .intro-text,
+  header.masthead.cv-masthead .intro-text {
+    padding-top: 24px;
+    padding-bottom: 24px; }
+    header.subhead1.cv-masthead .intro-text .intro-lead-in,
+    header.masthead.cv-masthead .intro-text .intro-lead-in {
       color: rgb(255, 255, 255);
       font-size: 22px;
       font-style: italic;
-      line-height: 22px;
-      margin-bottom: 25px;
+      line-height: 28px;
+      margin-bottom: 18px;
       font-family: 'Droid Serif', 'Helvetica Neue', Helvetica, Arial, sans-serif; }
-    header.masthead .intro-text .intro-heading {
+    header.subhead1.cv-masthead .intro-text .intro-heading,
+    header.masthead.cv-masthead .intro-text .intro-heading {
       font-size: 50px;
       font-weight: 700;
-      line-height: 50px;
-      margin-bottom: 25px;
+      line-height: 52px;
+      margin-bottom: 18px;
       font-family: 'Montserrat', 'Helvetica Neue', Helvetica, Arial, sans-serif;
       text-transform: uppercase; }
 
@@ -164,18 +170,21 @@ header.masthead {
   header.masthead .intro-text {
     padding-top: 300px;
     padding-bottom: 200px; }
+  header.masthead.cv-masthead .intro-text {
+    padding-top: 30px;
+    padding-bottom: 30px; }
     header.masthead .intro-text .intro-lead-in {
       color: rgb(255, 255, 255);
       font-size: 40px;
       font-style: italic;
       line-height: 40px;
-      margin-bottom: 25px;
+      margin-bottom: 20px;
       font-family: 'Droid Serif', 'Helvetica Neue', Helvetica, Arial, sans-serif; }
     header.masthead .intro-text .intro-heading {
-      font-size: 75px;
+      font-size: 70px;
       font-weight: 700;
-      line-height: 75px;
-      margin-bottom: 50px;
+      line-height: 70px;
+      margin-bottom: 20px;
       font-family: 'Montserrat', 'Helvetica Neue', Helvetica, Arial, sans-serif;
       text-transform: uppercase; } }
 
@@ -197,6 +206,10 @@ header.subhead1 {
   header.subhead1 .intro-text {
     padding-top: 150px;
     padding-bottom: 100px; }
+  header.subhead1.cv-masthead .intro-text {
+    padding-top: 90px;
+    padding-bottom: 40px;
+  }
     header.subhead1 .intro-text .intro-lead-in {
       font-size: 22px;
       font-style: italic;
@@ -215,6 +228,10 @@ header.subhead1 {
   header.subhead1 .intro-text {
     padding-top: 300px;
     padding-bottom: 200px; }
+  header.subhead1.cv-masthead .intro-text {
+    padding-top: 100px;
+    padding-bottom: 50px;
+  }
     header.subhead1 .intro-text .intro-lead-in {
       font-size: 40px;
       font-style: italic;
@@ -508,10 +525,139 @@ header.subhead2 {
       margin-bottom: 12px; }
 
 .cv-summary h3 {
-  margin-top: 30px;
-  margin-bottom: 12px;
+  margin-top: 0;
+  margin-bottom: 0.2rem;
   color: var(--site-blue);
   text-transform: none; }
+
+.cv-summary {
+  padding: 1.2rem 0 0; }
+
+.cv-page section {
+  padding: 0;
+}
+
+.cv-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 1rem;
+  margin-bottom: 0.8rem;
+  border-bottom: 1px solid var(--site-border);
+  padding-bottom: 0.8rem; }
+
+.cv-identity h2 {
+  margin-bottom: 0.25rem;
+  font-size: 2.4rem; }
+
+.cv-contact {
+  display: flex;
+  flex-direction: column;
+  gap: 0.2rem;
+  text-align: right;
+  font-size: 0.92rem;
+  color: #444444; }
+
+.cv-contact a {
+  color: inherit;
+  text-decoration: none; }
+
+.cv-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.75rem;
+}
+
+.cv-grid {
+  display: grid;
+  grid-template-columns: minmax(0, 2fr) minmax(240px, 1fr);
+  gap: 1rem;
+  align-items: start;
+}
+
+.cv-main,
+.cv-sidebar {
+  display: flex;
+  flex-direction: column;
+  gap: 0.4rem;
+}
+
+.cv-sidebar {
+  padding-left: 0.8rem;
+  border-left: 1px solid rgba(18, 56, 74, 0.12);
+}
+
+.cv-section {
+  page-break-inside: avoid;
+  break-inside: avoid;
+  margin-bottom: 0.25rem; }
+
+.cv-section h3,
+.cv-item h4 {
+  margin-top: 0;
+  margin-bottom: 0.1rem;
+}
+
+.cv-section h3 {
+  font-size: 1.15rem;
+}
+
+.cv-item h4 {
+  font-size: 1.05rem;
+}
+
+.cv-section p,
+.cv-section ul,
+.cv-item ul {
+  margin: 0 0 0.15rem;
+  padding: 0;
+}
+
+.cv-page p {
+  line-height: 1.45;
+}
+
+.cv-section ul {
+  padding-left: 1.1rem;
+}
+
+.cv-section ul li,
+.cv-item ul li {
+  margin-bottom: 0.15rem; }
+
+.cv-meta {
+  color: #555555;
+  font-size: 0.95rem;
+  margin-bottom: 0.2rem; }
+
+.cv-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: grid;
+  gap: 0.35rem; }
+
+.cv-list li::before {
+  content: '•';
+  margin-right: 0.6rem;
+  color: var(--site-blue);
+  display: inline-block;
+  width: 1em; }
+
+@media (max-width: 991px) {
+  .cv-header {
+    flex-direction: column;
+    align-items: flex-start; }
+  .cv-contact {
+    text-align: left; }
+  .cv-grid {
+    grid-template-columns: 1fr; } }
+
+@media (max-width: 576px) {
+  .cv-identity h2 {
+    font-size: 2rem; }
+  .cv-contact {
+    font-size: 0.92rem; } }
 
 @media print {
   #mainNav,
@@ -520,13 +666,28 @@ header.subhead2 {
   .profile-actions,
   .btn {
     display: none !important; }
+  body {
+    color: #111111;
+    background-color: #ffffff; }
   header.masthead {
     color: #111111;
-    background-image: none; }
-    header.masthead .intro-text {
-      padding: 40px 0; }
+    background-image: none;
+    padding-top: 0; }
+  header.masthead .intro-text {
+    padding: 20px 0 10px; }
+  .cv-page .container {
+    max-width: 100%; }
+  .cv-grid {
+    display: block; }
+  .cv-contact a,
+  a[href^="http"],
+  a[href^="mailto:"] {
+    text-decoration: underline; }
+  .cv-section {
+    page-break-inside: avoid;
+    break-inside: avoid; }
   section {
-    padding: 20px 0; } }
+    padding: 10px 0; } }
 
 .timeline {
   position: relative;
